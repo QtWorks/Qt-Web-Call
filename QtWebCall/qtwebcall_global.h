@@ -1,0 +1,12 @@
+#ifndef QTWEBCALL_GLOBAL_H
+#define QTWEBCALL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(QTWEBCALL_LIBRARY)
+#  define QTWEBCALLSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define QTWEBCALLSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QTWEBCALL_GLOBAL_H
